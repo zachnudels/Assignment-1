@@ -1,30 +1,42 @@
-public class BinaryTreeNode<T>{
-  private T data;
-  private BinaryTreeNode<T> leftNode;
-  private BinaryTreeNode<T> rightNode;
+public class BinaryTreeNode{
+  private Record data;
+  private BinaryTreeNode leftNode;
+  private BinaryTreeNode rightNode;
 
-  public BinaryTreeNode(T data){
+  public BinaryTreeNode(Record data){
     this.data=data;
     this.leftNode = null;
     this.rightNode=null;
   }
 
-  public BinaryTreeNode(T data, BinaryTreeNode<T> leftNode, BinaryTreeNode<T> rightNode){
+  public BinaryTreeNode(Record data, BinaryTreeNode leftNode, BinaryTreeNode rightNode){
     this.data=data;
     this.leftNode=leftNode;
     this.rightNode=rightNode;
   }
 
-  public T getData(){
+  public Record getData(){
     return this.data;
   }
 
-  public BinaryTreeNode<T> getleftNode(){
+  public BinaryTreeNode getleftNode(){
     return this.leftNode;
   }
 
-  public BinaryTreeNode<T> getrightNode(){
+  public BinaryTreeNode getrightNode(){
     return this.rightNode;
+  }
+
+  public void setData(Record data){
+    this.data=data;
+  }
+
+  public void setLeftNode(BinaryTreeNode leftNode){
+    this.leftNode=leftNode;
+  }
+
+  public void setRightNode(BinaryTreeNode rightNode){
+    this.rightNode=rightNode;
   }
 
 
