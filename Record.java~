@@ -1,0 +1,16 @@
+import java.util.*;
+public class Record{
+    private String line;
+    private String name;
+    
+    public Record(String line){
+    this.line=line;
+    name=line.substring(line.lastIndexOf("|")+1);
+    }
+
+
+
+
+
+
+}
