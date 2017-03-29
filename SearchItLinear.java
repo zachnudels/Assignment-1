@@ -16,19 +16,34 @@ public class SearchItLinear{
               dir.add(new Record(line));
           }
           br.close();
-      Iterator<Record> it = dir.iterator(); 
       Scanner scan = new Scanner(System.in);
-      String query = scan.nextLine();
-      Record found = null;
-      while (it.hasNext()){
-      Record rec = it.next();
-      String name = rec.getName();
-        if (query.equals(name)){
-          found = rec;
-          System.out.println(rec);
-          break;
-        }
+      List<String> queries = new ArrayList<String>();
+    //  String query = scan.nextLine();
+      System.out.println("Input queries. Type q to exit");
+      String input = "";
+      while (!input.equals("q")){
+        input = scan.nextLine();
+          queries.add(input);
       }
+      queries.remove(queries.size()-1);
+      Record found = null;
+      for (int i=0; i<queries.size(); i++){
+        String query = queries.get(i);
+        for (int j=0;j<dir.size();j++){
+          Record rec = dir.get(j);
+          String name = rec.getName();
+            if (query.equals(name)){
+              found = rec;
+              System.out.println(rec);
+              break;
+            }else{
+               if(j==dir.size()-1){
+                  System.out.println("Not Found");
+               }
+            }
+          }
+        }
+
       if (found==null)
          System.out.println("Not Found");
     }
