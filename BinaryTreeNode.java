@@ -19,11 +19,11 @@ public class BinaryTreeNode{
     return this.data;
   }
 
-  public BinaryTreeNode getleftNode(){
+  public BinaryTreeNode getLeftNode(){
     return this.leftNode;
   }
 
-  public BinaryTreeNode getrightNode(){
+  public BinaryTreeNode getRightNode(){
     return this.rightNode;
   }
 
