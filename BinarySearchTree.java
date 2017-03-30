@@ -6,6 +6,10 @@ public class BinarySearchTree{
     root=null;
   }
 
+  public BinaryTreeNode getRoot(){
+    return this.root;
+  }
+
   public void insert(Record data){
     if (root == null){
       root = new BinaryTreeNode(data,null,null);
@@ -20,13 +24,13 @@ public class BinarySearchTree{
       if (node.getLeftNode() == null)
         node.setLeftNode(new BinaryTreeNode(data, null, null));
       else
-        insert(data,node.getLeftNode());
+        insert(data, node.getLeftNode());
       }
     else{
         if (node.getRightNode()==null)
-          node.setRightNode(new BinaryTreeNode(data, node, node));
+          node.setRightNode(new BinaryTreeNode(data, null, null));
         else
-          insert(data,node.getRightNode());
+          insert(data, node.getRightNode());
         }
     }
 
