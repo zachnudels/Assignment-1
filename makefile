@@ -4,7 +4,7 @@ JAVAC=/usr/bin/javac
 .java.class:
 	$(JAVAC) $<
 
-classes: Record.class SearchItLinear.class BinaryTreeNode.class PrintIt.class BinarySearchTree.class
+classes: Record.class SearchItLinear.class BinaryTreeNode.class PrintIt.class BinarySearchTree.class SearchIt.class
 default: $(CLASSES)
 
 clean:

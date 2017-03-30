@@ -34,28 +34,27 @@ public class BinarySearchTree{
         }
     }
 
-    public BinaryTreeNode find(Record data){
+    public BinaryTreeNode find(String data){
       if (root == null)
           return null;
       else
         return find(data,root);
     }
 
-    public BinaryTreeNode find(Record data, BinaryTreeNode node){
-      String name = data.getName();
+    public BinaryTreeNode find(String name, BinaryTreeNode node){
       if (name.compareTo((node.getData()).getName())==0){
         return node;}
       else if (name.compareTo((node.getData()).getName())<0){
         if (node.getLeftNode()==null)
           return null;
         else
-          return find(data, node.getLeftNode());
+          return find(name, node.getLeftNode());
         }
       else{
         if (node.getRightNode()==null)
           return null;
         else
-          return find(data,node.getRightNode());
+          return find(name,node.getRightNode());
       }
     }
 }
