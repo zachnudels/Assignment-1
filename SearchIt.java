@@ -11,13 +11,16 @@ public class SearchIt{
     BinarySearchTree bst = new BinarySearchTree();
     BufferedReader br = new BufferedReader(new FileReader("testdata"));
         String line;
+        //int count=0;
         while ((line = br.readLine()) !=null){
             bst.insert(new Record(line));
+            //count++;
         }
         br.close();
+    //System.out.println(count);
     Scanner scan = new Scanner(System.in);
     List<String> queries = new ArrayList<String>();
-    System.out.println("Input queries. Type q to exit");
+    //System.out.println("Input queries. Type q to exit");
     String input = "";
     while (!input.equals("q")){
       input = scan.nextLine();
@@ -27,10 +30,10 @@ public class SearchIt{
     for (int i=0; i<queries.size(); i++){
       String query = queries.get(i);
       BinaryTreeNode node = bst.find(query);
-      if (node == null)
+      /*if (node == null)
         System.out.println("Not found");
       else
-        System.out.println((node.getData()).getLine());
+        System.out.println((node.getData()).getLine());*/
     }
 
   }
