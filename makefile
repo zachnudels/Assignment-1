@@ -31,6 +31,7 @@ all: Record.class \
 				PrintIt.class \
 				SearchIt.class \
 				SearchItLinear.class \
+				Querygen.class \
 
 # Rule for generating documentation
 doc:
@@ -56,6 +57,9 @@ PrintIt:
 
 SearchItLinear:
 	java -cp ./bin SearchItLinear
+
+Querygen:
+	java -cp ./bin Querygen
 
 #Cleans folders
 clean:
