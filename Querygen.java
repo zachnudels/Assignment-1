@@ -2,7 +2,8 @@ import java.util.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.nio.file.File;
+import java.io.File;
+import java.nio.file.StandardOpenOption;
 import java.nio.charset.Charset;
 
 public class Querygen{
@@ -25,11 +26,23 @@ public class Querygen{
     System.out.println("Input number of data queries");
     int n = scan.nextInt();
 
-    //Iterate through n and save n random data objects (i.e., String name) into a textfile queryfile.txt
-    for (int i=0;i<n+1;i++){
+    //Iterate through n and save n random data objects (i.e., String name) to ArrayList queries
+    List<String> queries = new ArrayList<String>();
+    for (int i=0;i<n;i++){
       Random rnd = new Random();
-      String query = dir.get(i).getName();
-      Files.write(file, query, Charset.forName("UTF-8"));
+      int num = rnd.nextInt(10000);
+      queries.add(dir.get(num).getName());
     }
+    // Write files to queryfile.txt
+    Iterator<String> it = queries.iterator();
+    Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "utf-8"));
+    while (it.hasNext()){
+      writer.write(it.next());
+      writer.write('\n');
+      // writer.write(/n);
+    }
+    writer.close();
+
+
   }
 }
