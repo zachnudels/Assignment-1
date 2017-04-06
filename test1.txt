@@ -1,0 +1,6 @@
+java -cp ./bin SearchIt
+62644 Krista Forge, San Luis Obispo|(455)491-7049|Kutch Elna
+94877 Koepp Wall, El Monte|576.512.1524|Ruecker Joshuah
+77011 Konopelski Lodge, San Marino|(209)281-7200 x10996|Schaden Wilfrid
+69931 Nader Highway, Tuscaloosa|214.377.5274 x59319|Nicolas Aurelio
+26807 London Way, Monrovia|580-019-7377 x98756|Lind Gerda

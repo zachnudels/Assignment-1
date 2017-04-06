@@ -1,4 +1,4 @@
-#Bash Script to execute time method on 10000 iterations of SearchIt
+#Bash Script to execute time method on 10 iterations of SearchIt for 10 different values of n
 #!/bin/bash
 n=1
 limit=10000
@@ -7,12 +7,12 @@ do
   echo $n
   for i in {1..10}
   do
-    time make SearchIt "$n"  1> /dev/null 2>> SearchItResults1.csv
+    time make SearchIt "$n"  1> /dev/null 2>> SearchItResults.csv
     n=$[$n+100]
   done
 done
   echo $limit
 for i in {1..10}
 do
-  time make SearchIt "$limit" 1> /dev/null 2>> SearchItResults1.csv
+  time make SearchIt "$limit" 1> /dev/null 2>> SearchItResults.csv
 done

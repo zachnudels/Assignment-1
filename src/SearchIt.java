@@ -18,11 +18,12 @@ public class SearchIt{
 // Create random list of names sized n
     //System.out.println(count);
 
-    for (int j = 1; j<10000;j++){
 
-    Scanner scan = new Scanner(System.in);
+    // Scanner scan = new Scanner(System.in);
   //  System.out.println("Enter size: n");
-    int n = args;
+
+  int n = args;
+
     ArrayList<String> queries = new ArrayList<String>(n);
     // queries.add("1");
     // queries.add("2");
@@ -48,7 +49,6 @@ public class SearchIt{
       else
         System.out.println((node.getData()).getLine());
     }
-  }
 
   }
 }

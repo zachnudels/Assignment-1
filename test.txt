@@ -1,7 +1,4 @@
+#Bash Script to execute time method on 10 iterations of SearchIt for 10 different values of n
 #!/bin/bash
-counter=1
-while [ $counter -le 10 ]
-  do
-  echo $counter
-  counter=$[$counter+2]
-done
+n=1
+make SearchIt  > test1.txt
