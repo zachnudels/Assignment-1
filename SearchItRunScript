@@ -1,0 +1,6 @@
+#Bash Script to execute time method on 10000 iterations of SearchIt
+#!/bin/bash
+for i in `seq 1 5`;
+do
+   time make SearchIt "$i"  1> /dev/null 2>> SearchItResults1.csv
+done

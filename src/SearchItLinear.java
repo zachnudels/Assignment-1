@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.File;
 import java.util.Iterator;
 import java.io.IOException;
 public class SearchItLinear{
@@ -46,5 +47,8 @@ public class SearchItLinear{
 
       if (found==null)
          System.out.println("Not Found");
+
+         File file = new File("queryfile.txt");
+         file.delete();
     }
 }
