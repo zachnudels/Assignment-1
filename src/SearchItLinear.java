@@ -17,16 +17,15 @@ public class SearchItLinear{
               dir.add(new Record(line));
           }
           br.close();
-      Scanner scan = new Scanner(System.in);
-      List<String> queries = new ArrayList<String>();
-    //  String query = scan.nextLine();
-      System.out.println("Input queries. Type q to exit");
-      String input = "";
-      while (!input.equals("q")){
-        input = scan.nextLine();
-          queries.add(input);
-      }
-      queries.remove(queries.size()-1);
+
+    // Create random list of names sized n
+      int n = Integer.parseInt(args[0]);
+        ArrayList<String> queries = new ArrayList<String>(n);
+        Querygen querygen = new Querygen();
+        queries = querygen.makeInput(n);
+
+
+// Search through linear data structure for each name
       Record found = null;
       for (int i=0; i<queries.size(); i++){
         String query = queries.get(i);
@@ -38,17 +37,10 @@ public class SearchItLinear{
               System.out.println(rec);
               break;
             }else{
-               if(j==dir.size()-1){
+               if(j==dir.size()-1)
                   System.out.println("Not Found");
-               }
             }
           }
         }
-
-      if (found==null)
-         System.out.println("Not Found");
-
-         File file = new File("queryfile.txt");
-         file.delete();
     }
 }

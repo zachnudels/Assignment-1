@@ -50,13 +50,13 @@ report: jacoco.exec
 
 #Rules for executing applications
 SearchIt:
-	java -cp ./bin SearchIt
+	java -cp ./bin SearchIt ${ARGS}
 
 PrintIt:
 	java -cp ./bin PrintIt
 
 SearchItLinear:
-	java -cp ./bin SearchItLinear
+	java -cp ./bin SearchItLinear ${ARGS}
 
 Querygen:
 	java -cp ./bin Querygen
