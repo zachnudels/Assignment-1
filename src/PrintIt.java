@@ -5,13 +5,28 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Iterator;
 import java.io.IOException;
+/**
+* PrintIt prints out a list of records in lexical order
+*
+*@author Zach Nudelman
+*@version 1.7
+*@since 29-03-2017
+*/
 public class PrintIt{
-
+/**
+*Prints data of node
+*@return void
+*@param node Node which data must be printed
+*/
   public void visit ( BinaryTreeNode node )
   {
      System.out.println (node.getData());
   }
-
+/**
+*Prints BinarySearchTree in lexical order
+*@return void
+*@param bst Tree to be printed out
+*/
   public void inOrder (BinarySearchTree bst)
   {
      inOrder (bst.getRoot());
@@ -25,9 +40,14 @@ public class PrintIt{
         inOrder (node.getRightNode());
      }
   }
-
+/**
+*This is the main method
+*@param args number of random names to find
+*@return null
+*@exception IOException On input error
+*@see IOException
+*/
   public static void main (String[]args) throws IOException{
-
     PrintIt prin = new PrintIt();
     BinarySearchTree bst = new BinarySearchTree();
     BufferedReader br = new BufferedReader(new FileReader("testdata"));

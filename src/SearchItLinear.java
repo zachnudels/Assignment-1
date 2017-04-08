@@ -6,10 +6,28 @@ import java.util.Scanner;
 import java.io.File;
 import java.util.Iterator;
 import java.io.IOException;
-public class SearchItLinear{
 
+/**
+* SearchItLinear finds the details of given names
+* It creates an ArrayList populated with the details data
+* It finds n random names from the list and creates a new list with these names .
+* It then iterates over the list to find the details
+*
+*@author Zach Nudelman
+*@version 1.7
+*@since 25-03-2017
+*/
+public class SearchItLinear{
+/**
+*This is the main method
+*@param args number of random names to find
+*@return null
+*@exception IOException On input error
+*@see IOException
+*/
     public static void main (String[] args) throws IOException
     {
+      // Creates an ArrayList populated with line from "testdata"
       List<Record> dir = new ArrayList<Record>();
       BufferedReader br = new BufferedReader(new FileReader("testdata"));
           String line;

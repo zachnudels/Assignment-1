@@ -34,8 +34,8 @@ all: Record.class \
 				Querygen.class \
 
 # Rule for generating documentation
-doc:
-	javadoc -d $(DOCDIR) $(TESTDIR)/*.java
+jdoc:
+	javadoc -d $(DOCDIR) $(SRCDIR)/*.java
 
 # Rule for unit testing
 test: test_classes

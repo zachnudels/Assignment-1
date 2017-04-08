@@ -1,7 +1,23 @@
 import java.util.*;
 import java.io.*;
+/**
+* SearchIt finds the details of given names using a BinarySearchTree
+* It creates BinarySearchTree populated with the details data
+* It finds n random names from the list and creates a new list with these names .
+* It then iterates over the BinarySearchTree to find the details
+*
+*@author Zach Nudelman
+*@version 1.7
+*@since 30-03-2017
+*/
 public class SearchIt{
-
+  /**
+  *This is the main method
+  *@param args number of random names to find
+  *@return null
+  *@exception IOException On input error
+  *@see IOException
+  */
   public static void main (String[] args) throws IOException{
 
 
