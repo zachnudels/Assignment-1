@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.io.IOException;
 
 /**
-* SearchItLinear finds the details of given names
+* SearchItLinearTest finds the details of given names
 * It creates an ArrayList populated with the details data
 * It finds n random names from the list and creates a new list with these names .
 * It then iterates over the list to find the details
@@ -17,7 +17,7 @@ import java.io.IOException;
 *@version 1.7
 *@since 25-03-2017
 */
-public class SearchItLinear{
+public class SearchItLinearTest{
 /**
 *This is the main method
 *@param args number of random names to find
@@ -36,12 +36,12 @@ public class SearchItLinear{
           }
           br.close();
 
-      //Read query file and put names into an ArrayList
-          BufferedReader br2 = new BufferedReader(new FileReader("query.txt"));
-          ArrayList<String> queries = new ArrayList<String>();
-          while ((line = br2.readLine())!=null){
-            queries.add(line);
-          }
+    // Create random list of names sized n
+      int n = Integer.parseInt(args[0]);
+        ArrayList<String> queries = new ArrayList<String>(n);
+        Querygen querygen = new Querygen();
+        queries = querygen.makeInput(n);
+
 
 // Search through linear data structure for each name
       Record found = null;

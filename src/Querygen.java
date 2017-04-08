@@ -5,7 +5,7 @@ import java.nio.*;
 *Class to create a random list of names
 *
 *@author Zach Nudelman
-*@version 1.7
+*@version 1.0
 *@since 05-04-2017
 */
 public class Querygen{

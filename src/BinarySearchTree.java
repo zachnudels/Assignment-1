@@ -2,7 +2,7 @@
 *Class toconstruct a BinarySearchTree
 *
 *@author Zach Nudelman
-*@version 1.7
+*@version 1.0
 *@since 25-03-2017
 */
 public class BinarySearchTree{
@@ -59,7 +59,7 @@ public class BinarySearchTree{
 /**
 *Calls find method with root as a parameter or returns null if root == null
 *@param data Name of record to search for
-*@return BinaryTreeNode  returns method with data and root as parameters
+*@return BinaryTreeNode returns method with data and root as parameters
 */
     public BinaryTreeNode find(String data){
       if (root == null)
@@ -68,10 +68,10 @@ public class BinarySearchTree{
         return find(data,root);
     }
   /**
-  *Calls insert method with root as a parameter or inserts record as root if root == null
+  *Finds a record with String name as the key
   *@param name Name of record to search for
   *@param node Node to compare record with
-  *@return BinaryTreeNode Returns node found 
+  *@return BinaryTreeNode Returns node found
   */
     public BinaryTreeNode find(String name, BinaryTreeNode node){
       if (name.compareTo((node.getData()).getName())==0){

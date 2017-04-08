@@ -9,7 +9,7 @@ import java.io.IOException;
 * PrintIt prints out a list of records in lexical order
 *
 *@author Zach Nudelman
-*@version 1.7
+*@version 1.0
 *@since 29-03-2017
 */
 public class PrintIt{
@@ -42,8 +42,8 @@ public class PrintIt{
   }
 /**
 *This is the main method
-*@param args number of random names to find
-*@return null
+*@param args Unused
+*@return void
 *@exception IOException On input error
 *@see IOException
 */

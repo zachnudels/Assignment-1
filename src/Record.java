@@ -1,9 +1,11 @@
 /*
 *******************
 *Record Class to Split data line into two attributes: name and line
-*Zach Nudelman
-*29 March 2017
-*******************
+*
+*@author Zach Nudelman
+*@version 1.0
+*@since 29-03-2017
+*
 */
 
 import java.util.*;

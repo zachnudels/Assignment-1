@@ -2,7 +2,7 @@
 *Class to construct BinaryTreeNode
 *
 *@author Zach Nudelman
-*@version 1.7
+*@version 1.0
 *@since 29-03-2017
 */
 public class BinaryTreeNode{
