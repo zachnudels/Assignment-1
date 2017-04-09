@@ -14,7 +14,7 @@ public class Record{
 
     public Record(String line){
     this.line=line;
-    name= line.substring(line.lastIndexOf("|")+1);
+    name = line.substring(line.lastIndexOf("|")+1);
     }
 
     public String getName(){

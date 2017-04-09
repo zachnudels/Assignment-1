@@ -32,6 +32,8 @@ all: Record.class \
 				SearchIt.class \
 				SearchItLinear.class \
 				Querygen.class \
+				SearchItTest.class \
+				SearchItLinearTest.class \
 
 # Rule for generating documentation
 jdoc:

@@ -7,12 +7,12 @@ do
   echo $n 2>> SearchItResults.csv
   for i in {1..10}
   do
-    (time make ARGS="$n" SearchItTest) 2>> SearchItResults.csv #> /dev/null 2>&1 >> SearchItResults.csv 2>&1
+    (time make ARGS="$n" SearchItTest ) 2>> SearchItResults.csv #> /dev/null 2>&1 >> SearchItResults.csv 2>&1
     n=$[$n+100]
   done
 done
   echo $limit 2>> SearchItResults.csv
 for i in {1..10}
 do
-  (time make ARGS="$limit" SearchItTest) 2>>SearchItResults.csv #> /dev/null 2>&1 ; } >> SearchItResults.csv 2>&1
+  (time make ARGS="$limit" SearchItTest ) 2>>SearchItResults.csv #> /dev/null 2>&1 ; } >> SearchItResults.csv 2>&1
 done
