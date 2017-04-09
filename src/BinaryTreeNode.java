@@ -12,7 +12,7 @@ public class BinaryTreeNode{
 
 /**
 *Creates a new BinaryTreeNode with Record and null nodes
-*@return Nothing
+*@return Nothing Constructor
 *@param data Record to instantiate Node with
 */
   public BinaryTreeNode(Record data){
@@ -21,16 +21,20 @@ public class BinaryTreeNode{
     this.rightNode=null;
   }
 /**
-*Creates a new BinaryTreeNode with Record and nodes
+*Creates a new BinaryTreeNode with Record and nodes as null
 *@return Nothing
-*@param data Record to instantiate Node with
-*@param leftNode Node to instantiate Node with
-*@param rightNode Node to instantiate Node with
+*@param Nothing
 */
   public BinaryTreeNode(){
     this(null,null,null);
   }
-
+/**
+*Creates a new BinaryTreeNode with Record and null nodes
+*@return Nothing Constructor
+*@param data Record to instantiate Node with
+*@param leftNode left child to instatiate node with
+*@param rightNode right child to instatiate node with
+*/
   public BinaryTreeNode(Record data, BinaryTreeNode leftNode, BinaryTreeNode rightNode){
     this.data=data;
     this.leftNode=leftNode;

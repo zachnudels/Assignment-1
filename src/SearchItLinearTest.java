@@ -21,7 +21,7 @@ public class SearchItLinearTest{
 /**
 *This is the main method
 *@param args number of random names to find
-*@return null
+*@return void Main method
 *@exception IOException On input error
 *@see IOException
 */

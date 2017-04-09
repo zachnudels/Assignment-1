@@ -43,7 +43,7 @@ public class PrintIt{
 /**
 *This is the main method
 *@param args Unused
-*@return void
+*@return void Main method
 *@exception IOException On input error
 *@see IOException
 */

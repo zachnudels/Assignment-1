@@ -10,7 +10,8 @@ import java.io.IOException;
 /**
 * SearchItLinear finds the details of given names
 * It creates an ArrayList populated with the details data
-* It finds n random names from the list and creates a new list with these names .
+* It then iterates over the ArrayList to find the details
+* which are provided by a queryfile
 * It then iterates over the list to find the details
 *
 *@author Zach Nudelman
@@ -21,7 +22,7 @@ public class SearchItLinear{
 /**
 *This is the main method
 *@param args number of random names to find
-*@return null
+*@return void Main method
 *@exception IOException On input error
 *@see IOException
 */

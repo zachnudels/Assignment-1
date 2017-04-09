@@ -10,7 +10,6 @@ public class BinarySearchTree{
   private BinaryTreeNode root;
 /**
 *Creates a new BinarySearchTree and sets root to null
-*@return Nothing
 */
   public BinarySearchTree(){
     root=null;

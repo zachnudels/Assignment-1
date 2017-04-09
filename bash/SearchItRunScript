@@ -1,4 +1,4 @@
-#Bash Script to execute time method on 10 iterations of SearchIt for 10 different values of n
+#Bash Script to execute time method on 10 iterations of SearchIt for 10 different values of n - increasing by 1000
 #!/bin/bash
 cd ..
 n=1
