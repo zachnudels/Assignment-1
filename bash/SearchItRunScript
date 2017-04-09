@@ -1,18 +1,20 @@
 #Bash Script to execute time method on 10 iterations of SearchIt for 10 different values of n
 #!/bin/bash
+cd ..
 n=1
 limit=10000
+PWD=pwd
 while [ $n -le $limit ]
 do
   echo $n 2>> SearchItResults.csv
   for i in {1..10}
   do
-    (time make ARGS="$n" SearchItTest ) 2>> SearchItResults.csv #> /dev/null 2>&1 >> SearchItResults.csv 2>&1
-    n=$[$n+100]
+    (time make ARGS="$n" SearchItTest ) 2>> Report/Results/SearchItResults.csv #> /dev/null 2>&1 >> SearchItResults.csv 2>&1
   done
+  n=$[$n+1000]
 done
   echo $limit 2>> SearchItResults.csv
 for i in {1..10}
 do
-  (time make ARGS="$limit" SearchItTest ) 2>>SearchItResults.csv #> /dev/null 2>&1 ; } >> SearchItResults.csv 2>&1
+  (time make ARGS="$limit" SearchItTest ) 2>> Report/Results/SearchItResults.csv #> /dev/null 2>&1 ; } >> SearchItResults.csv 2>&1
 done

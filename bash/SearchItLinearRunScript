@@ -1,5 +1,6 @@
 #Bash Script to execute time method on 10 iterations of SearchItLinear for 10 different values of n
 #!/bin/bash
+cd ..
 n=1
 limit=10000
 while [ $n -le $limit ]
@@ -8,12 +9,12 @@ do
 #run query general
   for i in {1..10}
   do
-    (time make ARGS="$n" SearchItLinearTest) 2>> SearchItLinearResults.csv #> /dev/null 2>&1 >> SearchItResults.csv 2>&1
-    n=$[$n+100] #Adding 100 because in for loop so 1000 in total
+    (time make ARGS="$n" SearchItLinearTest) 2>> Report/Results/SearchItLinearResults.csv #> /dev/null 2>&1 >> SearchItResults.csv 2>&1
   done
+  n=$[$n+100]
 done
   echo $limit 2>> SearchItLinearResults.csv
 for i in {1..10}
 do
-  (time make ARGS="$limit" SearchItLinearTest) 2>>SearchItLinearResults.csv #> /dev/null 2>&1 ; } >> SearchItResults.csv 2>&1
+  (time make ARGS="$limit" SearchItLinearTest) 2>> Report/Results/SearchItLinearResults.csv #> /dev/null 2>&1 ; } >> SearchItResults.csv 2>&1
 done
