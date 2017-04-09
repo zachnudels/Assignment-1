@@ -1,3 +1,4 @@
+import java.util.*;
 /*
 *******************
 *Record Class to Split data line into two attributes: name and line
@@ -7,8 +8,6 @@
 *@since 29-03-2017
 *
 */
-
-import java.util.*;
 public class Record{
     private String line;
     private String name;

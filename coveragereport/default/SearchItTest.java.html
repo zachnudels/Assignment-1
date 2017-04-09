@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>SearchItTest.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">.</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">SearchItTest.java</span></div><h1>SearchItTest.java</h1><pre class="source lang-java linenums">import java.util.*;
+import java.io.*;
+/**
+* SearchItTest finds the details of given names using a BinarySearchTree
+* It creates BinarySearchTree populated with the details data
+* It finds n random names from the list and creates a new list with these names .
+* It then iterates over the BinarySearchTree to find the details
+*
+*@author Zach Nudelman
+*@version 1.7
+*@since 30-03-2017
+*/
+<span class="nc" id="L13">public class SearchItTest{</span>
+  /**
+  *This is the main method
+  *@param args number of random names to find
+  *@return null
+  *@exception IOException On input error
+  *@see IOException
+  */
+  public static void main (String[] args) throws IOException{
+
+
+// Initialise BST and open testdata file
+<span class="nc" id="L25">    BinarySearchTree bst = new BinarySearchTree(); // Create BST object</span>
+<span class="nc" id="L26">    BufferedReader br = new BufferedReader(new FileReader(&quot;testdata&quot;)); //Open testdata</span>
+
+// Write testdata to bst
+        String line;
+<span class="nc bnc" id="L30" title="All 2 branches missed.">        while ((line = br.readLine()) !=null){</span>
+<span class="nc" id="L31">            bst.insert(new Record(line));</span>
+        }
+<span class="nc" id="L33">        br.close();</span>
+
+// Create random list of names sized n
+<span class="nc" id="L36">  int n = Integer.parseInt(args[0]);</span>
+<span class="nc" id="L37">    ArrayList&lt;String&gt; queries = new ArrayList&lt;String&gt;(n);</span>
+<span class="nc" id="L38">    Querygen querygen = new Querygen();</span>
+<span class="nc" id="L39">    queries = querygen.makeInput(n);</span>
+
+// Iterates over bst and prints out Line of data for given name
+<span class="nc bnc" id="L42" title="All 2 branches missed.">    for (int i=0; i&lt;queries.size(); i++){</span>
+<span class="nc" id="L43">      String query = queries.get(i);</span>
+<span class="nc" id="L44">      BinaryTreeNode node = bst.find(query);</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">      if (node == null)</span>
+<span class="nc" id="L46">        System.out.println(&quot;Not found&quot;);</span>
+      else
+<span class="nc" id="L48">        System.out.println((node.getData()).getLine());</span>
+    }
+
+<span class="nc" id="L51">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

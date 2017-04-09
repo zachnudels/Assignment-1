@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Querygen.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">.</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Querygen.java</span></div><h1>Querygen.java</h1><pre class="source lang-java linenums">import java.util.*;
+import java.io.*;
+import java.nio.*;
+/**
+*Class to create a random list of names
+*
+*@author Zach Nudelman
+*@version 1.0
+*@since 05-04-2017
+*/
+public class Querygen{
+
+<span class="fc" id="L13">public Querygen(){}</span>
+/**
+*Method which makes random list
+*@param n number of lines to construct
+*@return ArrayList ArrayList of queries
+*@exception IOException
+*@see IOException
+*/
+  public ArrayList makeInput(int n)throws IOException{
+
+    // Input all records into a linear data structure - ArrayList
+<span class="fc" id="L24">    List&lt;Record&gt; dir = new ArrayList&lt;Record&gt;();</span>
+<span class="fc" id="L25">    FileReader fr = new FileReader(&quot;testdata&quot;);</span>
+<span class="fc" id="L26">    BufferedReader br = new BufferedReader(new FileReader(&quot;testdata&quot;));</span>
+        String line;
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        while ((line = br.readLine()) !=null){</span>
+<span class="fc" id="L29">            dir.add(new Record(line));</span>
+        }
+<span class="fc" id="L31">        br.close();</span>
+
+    //Iterate through dir and save n random data objects (i.e., String name) to ArrayList queries
+<span class="fc" id="L34">    ArrayList&lt;String&gt; queries = new ArrayList&lt;String&gt;();</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">    for (int i=0;i&lt;n;i++){</span>
+<span class="fc" id="L36">      Random rnd = new Random();</span>
+<span class="fc" id="L37">      int num = rnd.nextInt(10000);</span>
+<span class="fc" id="L38">      queries.add(dir.get(num).getName());</span>
+    }
+<span class="fc" id="L40">    return queries;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

@@ -1,0 +1,21 @@
+java -cp ./bin SearchItLinear
+55875 Rosa Green #829, Hoover|1-398-891-3821|Hilll Norval
+91998 Lebsack Rapids #925, Dothan|1-606-451-7767|Schneider Mikayla
+89602 Lueilwitz Via, Springfield|1-371-995-4522 x11610|Legros Jonatan
+74832 Nikolaus Courts #998, Lynwood|1-644-862-4162 x50524|Gislason Kaela
+03994 Anne Creek Suite 212, Indio|(493)916-4023|Leuschke Tad
+87615 Juwan Inlet, Yorba Linda|1-329-924-4242 x26613|Berge Kamryn
+88867 Satterfield Mission Suite 843, Rancho Cordova|589.568.3824 x77605|Herzog Violet
+47108 Schamberger Fort, Agoura Hills|056.667.2992 x1964|Kunde Blanche
+29035 Fanny Turnpike, Valencia|(783)534-1221 x033|Boyle Carmel
+64917 Department A, Alhambra|171-588-4353 x43751|Stanton Andreanne
+Not Found
+16391 Domingo Village, Steubenville|470.828.3646 x167|Bauch Branson
+65411 Osinski Coves Suite 161, Delta Junction|745.515.5312 x2694|Orn Kristy
+95018 Carey Freeway #128, Rohnert Park|382-713-7413 x2889|Rohan Aiyana
+62803 Leannon Court Suite 533, Ontario|(737)827-3322 x9645|Little Jerod
+05826 Kamron Spurs Suite 418, Gary|(063)669-4431 x557|Reichert Addison
+49758 Floor 38, Stockton|(157)634-1508|Kub Stacey
+60918 Clementina Villages, Springfield|119.673.3115 x3855|Kuhn Brianne
+63555 Hagenes Island Apt. 133, Burbank|772.108.3458|Stoltenberg Bobbie
+97271 Alayna Squares Suite 639, Compton|1-326-803-7499 x44917|Hammes Ethelyn

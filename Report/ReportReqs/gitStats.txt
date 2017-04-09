@@ -1,0 +1,101 @@
+commit ca5e4672ecfd473400e60eb664f3ba0f9424e23a
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Sat Apr 8 16:01:00 2017 +0200
+
+    New files created to accept queryfile as per question
+
+commit c65dfdeb59349b9083ba8da53950c3affa88fc38
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Sat Apr 8 11:13:10 2017 +0200
+
+    Javadocs generated for src files
+
+commit 814da261181c2a139f27a8ef69d766aee20fc730
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Fri Apr 7 16:59:50 2017 +0200
+
+    Final everything
+
+commit 430d42e93557ae12735610c40c6cef11b4edabc6
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Thu Apr 6 17:39:47 2017 +0200
+
+    redid searchitrunscript because of a funny for loop
+
+commit 790a84da02b2fa1a644af3a7659b873dc818bc8c
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Thu Apr 6 17:24:29 2017 +0200
+
+    SearchItRunScript working. Test data printed
+
+commit 54eb1dcef963089c5bf0a05613474cf8d252bef5
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Thu Apr 6 17:01:18 2017 +0200
+
+    Querygen as a class. Searchit takes in args as an int. Int n is given by terminal when executed. Bashscript made to run searchit, time it, send time to csv file - then can iterate for different values of n
+
+commit 7d9f9a50f71109c5fa9e19ac3d75a6f2886330c5
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Apr 5 19:53:10 2017 +0200
+
+    Random name generator: "Querygen" working!
+
+commit 6fd1cf45fefa83d388945cc0e587db751e5925a2
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Apr 5 19:19:56 2017 +0200
+
+    Started querygen - will create query files to send to SearchIt*
+
+commit 199ab012b28bc3cad5202971532005786d41b38d
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Apr 5 17:35:57 2017 +0200
+
+    Makefile operational! | Folders sorted into bin, src and test
+
+commit 5981fe3ab929ad40bb5647fef03f432c1cca4798
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Apr 5 11:51:46 2017 +0200
+
+    makefile changes
+
+commit 988b316febf0f44fe44a4f18db735b5e37eaca6f
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Thu Mar 30 17:38:10 2017 +0200
+
+    SearchIt v1 - works!
+
+commit 93d7cc8f9f6c674d496e2f582056e5ca2648ba6d
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Thu Mar 30 14:19:19 2017 +0200
+
+    PrintIt working!
+
+commit 56509c40deb5e601647542b7384e0d1692181f28
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Thu Mar 30 14:00:19 2017 +0200
+
+    PrintIt v1
+
+commit ac0df60a620ca5cd57a0c5aaf06b62ec83afb08c
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Mar 29 19:43:49 2017 +0200
+
+    BST v1 compiled successfully
+
+commit 24dffc8cdc2b435b4c8774aead4b98274fbde879
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Mar 29 19:34:41 2017 +0200
+
+    BST V1
+
+commit 92926bbcbc60f1919b158646ed2f2e86c1723b17
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Mar 29 13:03:49 2017 +0200
+
+    Finished SearchItLinear
+
+commit 772b4867c5703bf24ea0b878bcbf708a9337e758
+Author: Zach Nudelman <zachnudels@gmail.com>
+Date:   Wed Mar 29 11:00:48 2017 +0200
+
+    before starting with BST part

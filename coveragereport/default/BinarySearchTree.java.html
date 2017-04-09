@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>BinarySearchTree.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">.</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">BinarySearchTree.java</span></div><h1>BinarySearchTree.java</h1><pre class="source lang-java linenums">/**
+*Class toconstruct a BinarySearchTree
+*
+*@author Zach Nudelman
+*@version 1.0
+*@since 25-03-2017
+*/
+public class BinarySearchTree{
+
+  private BinaryTreeNode root;
+/**
+*Creates a new BinarySearchTree and sets root to null
+*@return Nothing
+*/
+<span class="fc" id="L15">  public BinarySearchTree(){</span>
+<span class="fc" id="L16">    root=null;</span>
+<span class="fc" id="L17">  }</span>
+/**
+*Returns the root
+*@param Nothing
+*@return BinaryTreeNode
+*/
+    public BinaryTreeNode getRoot(){
+<span class="fc" id="L24">    return this.root;</span>
+  }
+/**
+*Calls insert method with root as a parameter or inserts record as root if root == null
+*@param data the Record to be inserted
+*@return void calls insert(data,root)
+*/
+    public void insert(Record data){
+<span class="fc bfc" id="L32" title="All 2 branches covered.">    if (root == null){</span>
+<span class="fc" id="L33">      root = new BinaryTreeNode(data,null,null);</span>
+    }
+    else
+<span class="fc" id="L36">      insert (data, root);</span>
+<span class="fc" id="L37">    }</span>
+/**
+*Inserts Record into correct place (alphabetically by First name) on BinarySearchTree
+*@param data the Record to be inserted
+*@param node Node to compare record with
+*@return void Inserts Record into BinarySearchTree
+*/
+    public void insert(Record data, BinaryTreeNode node){
+<span class="fc" id="L45">    String name = data.getName();</span>
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">    if (name.compareTo((node.getData()).getName())&lt;=0){</span>
+<span class="nc bnc" id="L47" title="All 2 branches missed.">      if (node.getLeftNode() == null)</span>
+<span class="nc" id="L48">        node.setLeftNode(new BinaryTreeNode(data, null, null));</span>
+      else
+<span class="nc" id="L50">        insert(data, node.getLeftNode());</span>
+      }
+    else{
+<span class="pc bpc" id="L53" title="1 of 2 branches missed.">        if (node.getRightNode()==null)</span>
+<span class="fc" id="L54">          node.setRightNode(new BinaryTreeNode(data, null, null));</span>
+        else
+<span class="nc" id="L56">          insert(data, node.getRightNode());</span>
+        }
+<span class="fc" id="L58">    }</span>
+/**
+*Calls find method with root as a parameter or returns null if root == null
+*@param data Name of record to search for
+*@return BinaryTreeNode returns method with data and root as parameters
+*/
+    public BinaryTreeNode find(String data){
+<span class="pc bpc" id="L65" title="1 of 2 branches missed.">      if (root == null)</span>
+<span class="nc" id="L66">          return null;</span>
+      else
+<span class="fc" id="L68">        return find(data,root);</span>
+    }
+  /**
+  *Finds a record with String name as the key
+  *@param name Name of record to search for
+  *@param node Node to compare record with
+  *@return BinaryTreeNode Returns node found
+  */
+    public BinaryTreeNode find(String name, BinaryTreeNode node){
+<span class="fc bfc" id="L77" title="All 2 branches covered.">      if (name.compareTo((node.getData()).getName())==0){</span>
+<span class="fc" id="L78">        return node;}</span>
+<span class="pc bpc" id="L79" title="1 of 2 branches missed.">      else if (name.compareTo((node.getData()).getName())&lt;0){</span>
+<span class="nc bnc" id="L80" title="All 2 branches missed.">        if (node.getLeftNode()==null)</span>
+<span class="nc" id="L81">          return null;</span>
+        else
+<span class="nc" id="L83">          return find(name, node.getLeftNode());</span>
+        }
+      else{
+<span class="pc bpc" id="L86" title="1 of 2 branches missed.">        if (node.getRightNode()==null)</span>
+<span class="nc" id="L87">          return null;</span>
+        else
+<span class="fc" id="L89">          return find(name,node.getRightNode());</span>
+      }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.5.201505241946</span></div></body></html>

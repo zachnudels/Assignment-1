@@ -27,6 +27,10 @@ public class BinaryTreeNode{
 *@param leftNode Node to instantiate Node with
 *@param rightNode Node to instantiate Node with
 */
+  public BinaryTreeNode(){
+    this(null,null,null);
+  }
+
   public BinaryTreeNode(Record data, BinaryTreeNode leftNode, BinaryTreeNode rightNode){
     this.data=data;
     this.leftNode=leftNode;

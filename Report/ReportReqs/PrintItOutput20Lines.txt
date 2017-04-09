@@ -1,0 +1,20 @@
+	java -cp ./bin PrintIt
+03707 Botsford Fork, Lima|489-848-7299|Abbott Alec
+44812 Wilderman Mountain, Vallejo|318.679.5603 x712|Abbott Alexandria
+76400 Barton Fields #044, Cerritos|507.340.1186|Abbott Alia
+02519 Zackery Village, San Mateo|602.992.4016|Abbott Brando
+88126 Bruen Common, Beverly Hills|788.603.8604|Abbott Elwyn
+51832 Bayer Pass, Simi Valley|1-035-079-0176 x61480|Abbott Hosea
+87191 Suite Z, Selma|823.283.2198 x7192|Abbott Ima
+27010 Sanford Center, Stanton|822.752.1004|Abbott Josh
+17296 Elta Crossroad #362, Newport Beach|516-835-0116|Abbott Leann
+18565 Suite B, Fountain Valley|1-117-789-3061|Abbott Meda
+22345 Runte Garden, Steubenville|1-654-279-2374|Abbott Murray
+32763 Langosh Route, San Diego|297-763-2822|Abbott Novella
+90282 Haag Keys, Garden Grove|(681)856-6604 x642|Abbott Rahsaan
+52000 Marques Loaf #288, Placentia|(961)238-9093|Abbott Sadye
+78469 Renner Mill, Agoura Hills|1-515-459-1556|Abbott Santina
+96179 Feil Tunnel #352, Canton|1-052-394-1236 x29668|Abernathy Amparo
+98827 Gerlach Pike Apt. 743, Apple Valley|1-486-893-0367|Abernathy Austyn
+14576 Harber Knolls, Riverside|1-331-934-0147|Abernathy Catalina
+23694 Pier F, Tempe|(552)753-8320 x85031|Abernathy Chadd

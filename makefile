@@ -37,8 +37,10 @@ all: Record.class \
 jdoc:
 	javadoc -d $(DOCDIR) $(SRCDIR)/*.java
 
-# Rule for unit testing
-test: test_classes
+test_classes:	all TestRecord.class TestBinaryTreeNode.class TestBinarySearchTree.class TestQueryGen.class TestSuite.class
+
+#Rule for unit tests
+test:
 	java -ea -cp $(BINDIR):$(JUNIT) org.junit.runner.JUnitCore TestSuite
 
 # Rules for generating tests
@@ -66,6 +68,9 @@ SearchItTest:
 
 SearchItLinearTest:
 	java -cp ./bin SearchItLinearTest ${ARGS}
+
+QuerygenMain:
+	java -cp ./bin QuerygenMain
 
 #Cleans folders
 clean:
